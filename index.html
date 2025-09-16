@@ -54,10 +54,14 @@
       margin-bottom: 20px;
       background-color: pink;
     }
-    @media screen and (max-width: 767px) {
-      table{
-        max-width: 50%;
-      }
+    .table-container {
+      overflow-x: auto;
+    }
+
+    .table-container table {
+      width: 100%;
+      min-width: 600px; /* 可視情況調整 */
+      border-collapse: collapse;
     }
   </style>
 </head>
@@ -110,7 +114,7 @@
   <p>這種教條不僅加深了社會的恐懼與偏見，也讓許多墮天使與吸血鬼被誤殺，進一步激化了反抗勢力與信仰體系的矛盾。</p>
 </section>
 
-<section>
+<section class="table-container">
   <h2>種族能力與特徵</h2>
   <table>
     <thead>
